@@ -24,11 +24,18 @@ $('#reset').on('click', function (event){
 */
 
 var togTarg = $('.toggleTarget');
-
+var togTargTwo = $('.toggleTarget-2')
+var byeBox = $('.content');
+var boxTwo = $('.content-2');
+/*
 togTarg.click(function() {
-  $('.content').toggleClass( "active" );
+  byeBox.toggleClass( "active" );
 });
 
-$('.toggleTarget-2').click(function() {
-  $('.content').toggleClass( "inActive" );
+togTargTwo.click(function() {
+  byeBox.toggleClass( "inActive" )
+  boxTwo.toggleClass( "active" );
 });
+*/
+
+togTarg.toggleClass( ".active", true );

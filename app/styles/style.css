@@ -21,7 +21,7 @@ h2 {
     width: 99%;
     margin: 0 auto; } }
 
-.content {
+.content, .content-2 {
   background-color: white;
   height: 0;
   opacity: 0; }

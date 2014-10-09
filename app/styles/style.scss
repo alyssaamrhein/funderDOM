@@ -1,0 +1,61 @@
+@import url(http://fonts.googleapis.com/css?family=Raleway:600);
+
+$raleway: 'Raleway', sans-serif;
+$basic-gray:#E0E0E0;
+
+
+
+h1 {
+  display: block;
+  font-family: $raleway;
+  text-align: center;
+}
+
+h2 {
+  background-color: darken($basic-gray, 10%);
+  font-family: $raleway;
+  margin: 0;
+  padding: .5em;
+}
+
+.accordian {
+  height: auto;
+  width: 80%;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 40em) {
+  .accordian {
+    height: auto;
+    width: 99%;
+    margin: 0 auto;
+  }
+}
+
+.content {
+  background-color: lighten($basic-gray, 50%);
+  height: 0;
+  opacity: 0;
+}
+
+
+p {
+  margin: 0;
+  padding: 1em 4em;
+}
+
+.active {
+  background-color: $basic-gray;
+  height: 4em;
+  opacity: 1;
+  -webkit-transition: height 1s, background-color 2s, opacity 1s;
+          transition: height 1s, background-color 2s, opacity 1s;
+}
+
+.inActive {
+  background-color: $basic-gray;
+  height: 0;
+  opacity: 0;
+  -webkit-transition: height 1s, background-color 2s, opacity 1s;
+          transition: height 1s, background-color 2s, opacity 1s;
+}

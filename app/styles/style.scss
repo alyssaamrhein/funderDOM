@@ -24,7 +24,7 @@ h2 {
   margin: 0 auto;
 }
 
-@media screen and (max-width: 40em) {
+@media screen and (max-width: 40em) { //Yay responsive!
   .accordian {
     height: auto;
     width: 99%;
@@ -32,7 +32,8 @@ h2 {
   }
 }
 
-.content, .content-2 {
+.content, //common convention is to put comma separated selectors on new lines to more easily distinquish that its two different elements
+.content-2 {
   background-color: lighten($basic-gray, 50%);
   height: 0;
   opacity: 0;
@@ -51,7 +52,49 @@ p {
   -webkit-transition: height 1s, background-color 2s, opacity 1s;
           transition: height 1s, background-color 2s, opacity 1s;
 }
+/*
+  --- These two classes are almost identical. With this much duplication you would be much better off
+      moving that into its own class and only having the changes in these two classes.
+      Keep in mind there are multiple ways of doing that. I'll demonstrate both.
+      
+      //Base class style
+      .list-item {
+        background-color: $basic-gray;
+        -webkit-transition: height 1s, background-color 2s, opacity 1s;
+                transition: height 1s, background-color 2s, opacity 1s;
+        
+        .active {
+          height: 4em;
+          opacity: 1; 
+        }
+        
+        .inactive {
+          height: 0;
+          opacity: 0;
+        }
+      }
+      
+      //Overwrite style
+      
+      .active {
+          background-color: $basic-gray;
+          height: 4em;
+          opacity: 1;
+          -webkit-transition: height 1s, background-color 2s, opacity 1s;
+                  transition: height 1s, background-color 2s, opacity 1s;
+                  
+          .inactive {
+            height: 0;
+            opacity: 0;
+          }
+      }
+      
+      
+      Either way, having an active and inactive class can be confusing. 
+      Normally this is done by havbing a base class that acts as an inactive state and an active state to change it.
 
+      
+*/
 .inActive {
   background-color: $basic-gray;
   height: 0;

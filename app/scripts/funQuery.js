@@ -38,4 +38,6 @@ togTargTwo.click(function() {
 });
 */
 
+// I think you may have more up to date code on your computer :(
+// Get that on github.
 togTarg.toggleClass( ".active", true );

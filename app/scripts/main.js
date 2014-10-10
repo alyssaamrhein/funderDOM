@@ -76,19 +76,19 @@ document.getElementsByTagName('nav');
 
 var getNav = document.getElementsByTagName('nav');
 
-getNav
+getNav // we should really try to remove lines like this that were written for testing before committing and moving on.
 
 getNavWhole = getNav[0];
-getNavWhole
+getNavWhole // Same here
 getNavWhole.children[0]
 var theUl = getNavWhole.children[0]
-theUl
-theUl[1]
-theUl.children
-theUl.children[1]
+theUl  // and here
+theUl[1] // and here
+theUl.children // and here
+theUl.children[1] // and here
 var theChildren = theUl.children[1]
-theChildren
-theChildren.innerText
+theChildren // and here
+theChildren.innerText // here too
 
 var mainSection = document.getElementById("main")
 var newP = document.createElement("p");

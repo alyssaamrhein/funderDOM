@@ -36,10 +36,3 @@ p {
   opacity: 1;
   -webkit-transition: height 1s, background-color 2s, opacity 1s;
   transition: height 1s, background-color 2s, opacity 1s; }
-
-.inActive {
-  background-color: #E0E0E0;
-  height: 0;
-  opacity: 0;
-  -webkit-transition: height 1s, background-color 2s, opacity 1s;
-  transition: height 1s, background-color 2s, opacity 1s; }

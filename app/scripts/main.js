@@ -76,19 +76,10 @@ document.getElementsByTagName('nav');
 
 var getNav = document.getElementsByTagName('nav');
 
-getNav
 
-getNavWhole = getNav[0];
-getNavWhole
-getNavWhole.children[0]
 var theUl = getNavWhole.children[0]
-theUl
-theUl[1]
-theUl.children
-theUl.children[1]
 var theChildren = theUl.children[1]
-theChildren
-theChildren.innerText
+
 
 var mainSection = document.getElementById("main")
 var newP = document.createElement("p");
